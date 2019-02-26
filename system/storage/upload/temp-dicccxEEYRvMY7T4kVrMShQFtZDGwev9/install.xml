@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<name>Snow Opencart</name>
+	<code>Snow Opencart</code>
+	<version>1.0</version>
+	<author>https://ocmod.net</author>
+	<link>https://ocmod.net</link>
+	<file path="catalog/view/theme/*/template/common/footer.tpl">
+		<operation>
+			<search><![CDATA[</body>]]></search>
+			<add position="before"><![CDATA[<script type="text/javascript">(function(){var mns = document.createElement('script');mns.type = 'text/javascript';mns.async = true;mns.src = 'catalog/view/javascript/snowstorm.js';var mnx = document.getElementsByTagName('script')[0];mnx.parentNode.insertBefore(mns, mnx);})();</script>]]></add>
+		</operation>
+	</file>
+	<file path="catalog/view/theme/*/template/common/footer.twig">
+		<operation>
+			<search><![CDATA[</body>]]></search>
+			<add position="before"><![CDATA[<script type="text/javascript">(function(){var mns = document.createElement('script');mns.type = 'text/javascript';mns.async = true;mns.src = 'catalog/view/javascript/snowstorm.js';var mnx = document.getElementsByTagName('script')[0];mnx.parentNode.insertBefore(mns, mnx);})();</script>]]></add>
+		</operation>
+	</file>
+</modification>
